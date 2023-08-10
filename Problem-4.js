@@ -1,4 +1,3 @@
-
 function findAddress(obj) {
   if (obj && obj.street && obj.house && obj.society) {
     return obj.street + "," + obj.house + "," + obj.society;
@@ -10,11 +9,12 @@ function findAddress(obj) {
   }
 }
 
-let address = {
+let obj = {
   street: 10,
   house: "10A",
   society: "Earth Perfect",
 };
 
-let formattedAddress = findAddress(address);
-console.log(formattedAddress);
+const obj2 = { street: 10 };
+console.log(findAddress(obj));
+console.log(findAddress(obj2));

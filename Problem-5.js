@@ -17,4 +17,4 @@ function canPay(changeArray, totalDue) {
   
   console.log(canPay([1, 2, 5], 10));
   console.log(canPay([1, 5, 5], 10));
-  
+  console.log(canPay([], 10));
