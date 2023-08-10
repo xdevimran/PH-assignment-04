@@ -1,11 +1,12 @@
-function findAddress(address) {
-  if (address && address.street && address.house && address.society) {
-    return address.street + "," + address.house + "," + address.society;
+
+function findAddress(obj) {
+  if (obj && obj.street && obj.house && obj.society) {
+    return obj.street + "," + obj.house + "," + obj.society;
   } else {
-    if (!address.street) address.street = "__";
-    if (!address.house) address.house = "__";
-    if (!address.society) address.society = "__";
-    return address.street + "," + address.house + "," + address.society;
+    if (!obj.street) obj.street = "__";
+    if (!obj.house) obj.house = "__";
+    if (!obj.society) obj.society = "__";
+    return obj.street + "," + obj.house + "," + obj.society;
   }
 }
 
